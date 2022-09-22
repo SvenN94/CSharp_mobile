@@ -8,7 +8,7 @@ namespace MauiApp2
 {
     public class LeetTranslator
     {
-        public string ToLeet(string raw, double degree = 10)
+        public string ToLeet(string raw, double degree =10)
         {
             if (string.IsNullOrWhiteSpace(raw))
                 return ToLeet("Please fill in something");

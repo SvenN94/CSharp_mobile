@@ -16,7 +16,9 @@ public partial class MainPage : ContentPage
 
 	private void Button_Clicked(object sender, EventArgs e)
 	{
-
+		string inhoud = TxtInput.Text.ToString();
+		LeetTranslator translator = new LeetTranslator();
+		LblLeet.Text = translator.ToLeet(inhoud,SldWaarde.Value);
 	}
 }
 

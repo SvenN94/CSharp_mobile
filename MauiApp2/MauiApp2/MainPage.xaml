@@ -24,9 +24,13 @@
                 BackgroundColor="Black"
                 TextColor="Green"
                 FontSize="20"
-                x:Name="LblLeet"
-                
-                
+                x:Name="LblLeet"        
+                />
+            <Slider
+                Minimum="0"
+                Maximum="100"
+                Value="50"
+                x:Name="SldWaarde"
                 />
 
 
