@@ -9,6 +9,17 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	
+	private void Button_Clicked(object sender, EventArgs e)
+	{
+		count ++;
+		if(count % 2 == 0)
+		{
+			LblColorChange.BackgroundColor = Colors.Yellow;
+		}
+		else
+		{
+			LblColorChange.BackgroundColor= Colors.Red;
+		}
+	}
 }
 
