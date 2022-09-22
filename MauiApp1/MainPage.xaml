@@ -19,17 +19,29 @@
                 x:Name="LblColorChange"
                 />
             <Label
+                Text="Dit was belangrijk!"
                 />
             <Label
+                Text="Deze is groen, de text is wit!"
+                TextColor="White"
+                BackgroundColor="Green"
                 />
             <Button
+                Text="Klik om de kleur te veranderen!"
+                x:Name="BtnKleur"
+                Clicked="Button_Clicked"
+                />
+            <DatePicker
+                MinimumDate="01/01/2022"
+                MaximumDate="12/31/2022"
+                Date="08/15/2022"
                 />
 
 
 
 
 
-        </VerticalStackLayout>
+    </VerticalStackLayout>
    
     
 </ContentPage>
