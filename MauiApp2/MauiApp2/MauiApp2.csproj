@@ -48,4 +48,14 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\7abe4b53c67ef23cd00c1956e1665d33_400x400.jpeg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="PXLPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

@@ -8,7 +8,7 @@
 
     <ShellContent
         Title="Leet Translator"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate local:PXLPage}"
         Route="MainPage" />
 
 </Shell>
