@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="week3Maui.MainPage">
+
+    <VerticalStackLayout>
+         <Button Text="SearchBar" x:Name="BtnSearch" Clicked="BtnSearch_Clicked" ></Button>
+         <Button Text="Webview" x:Name="BtnWebview" Clicked="BtnWebview_Clicked" ></Button>
+         <Button Text="Editor" x:Name="BtnEditor" Clicked="BtnEditor_Clicked" ></Button>
+         <Button Text="Switch" x:Name="BtnSwitch" Clicked="BtnSwitch_Clicked" ></Button>
+         <Button Text="DatePicker" x:Name="BtnDate" Clicked="BtnDate_Clicked" ></Button>
+         <Button Text="ProgressBar" x:Name="BtnProgress" Clicked="BtnProgress_Clicked" ></Button>
+         <Button Text="CollectionPage" x:Name="BtnCollectionPage" Clicked="BtnCollectionPage_Clicked"/>
+         <Button Text="RekenmachinePage" x:Name="BtnRekenPage" Clicked="BtnRekenPage_Clicked"/>
+    </VerticalStackLayout>
+
+
+</ContentPage>

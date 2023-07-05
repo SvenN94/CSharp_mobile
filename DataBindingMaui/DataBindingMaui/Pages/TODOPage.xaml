@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBindingMaui.Pages.TODOPage"
+             Title="TODOPage">
+    <StackLayout Padding="10,0">
+        <Label Text="TEXT"
+               FontSize="{Binding Source={x:Reference size_slider},Path= Value}"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               TextColor="{Binding Source={x:Reference color_picker}, Path=SelectedItem}"
+               Rotation="{Binding Source={x:Reference rotation_slider},Path = Value}"
+               />
+        <VerticalStackLayout>
+            <Label Text="Text Color"/>
+            <Picker Title="Color" 
+                x:Name="color_picker">
+                <Picker.Items>
+                    <x:String>#00bfff</x:String>
+                    <x:String>Red</x:String>
+                    <x:String>Yellow</x:String>
+                </Picker.Items>
+            </Picker>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="Size:"/>
+            <Slider x:Name="size_slider"
+                    Value="12"
+                    Minimum="12"
+                    Maximum="80"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+        <Label Text="slider for rotation"/>
+        <Slider x:Name="rotation_slider"
+                Value="0"
+                Minimum="0"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand"/>
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>
